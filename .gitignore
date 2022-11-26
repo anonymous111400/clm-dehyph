@@ -1,3 +1,25 @@
+
+venv-clm-dehyph
+
+character_language_models/5-gram-backward.model
+character_language_models/5-gram-forward.model
+character_language_models/bilstm_model_512.h5
+
+dehyphenation/scripts/corpus_word_counts.pickle
+
+dehyphenation/scripts/hu_HU.aff
+dehyphenation/scripts/hu_HU.dic
+
+dehyphenation/eval/*/*INFO
+dehyphenation/eval/*/*anno
+dehyphenation/eval/*/*eval_data
+dehyphenation/eval/*/*gold
+dehyphenation/eval/*/*input
+
+*.swp
+
+# -----
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]

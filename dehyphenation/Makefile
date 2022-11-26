@@ -19,7 +19,7 @@ HUNSPELL_URL=https://cgit.freedesktop.org/libreoffice/dictionaries/plain/hu_HU/h
 prepare: get_hunspell_data generate_corpus_word_count
 
 get_hunspell_data:
-	cd $S; wget $(HUNSPELL_URL).aff; wget $(HUNSPELL_URL).dic
+	cd $S; rm -f hu_HU.aff hu_HU.dic ; wget $(HUNSPELL_URL).aff; wget $(HUNSPELL_URL).dic
 
 generate_corpus_word_count:
 	python3 $S/extract_words_from_corpus.py $(UNHYPHENATED_CORPUS_DIR)

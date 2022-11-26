@@ -1,4 +1,4 @@
-## The code in this repository requires python >= 3.10 to run
+## The code in this repository requires python >= 3.8 to run
 tensorflow
 keras
 numpy
@@ -9,3 +9,4 @@ h5py
 pyphen
 hunspell
 regex
+scikit-learn
