@@ -5,20 +5,17 @@ A repo for reviewers of MSZNY 2023 paper titled _Korpusztisztítás és sorvégi
 
 ## evaluation of dehyphenation methods
 
-1. create virtual environment
+1. preparation
    ```bash
    python3 -m venv venv-clm-dehyph
    source venv-clm-dehyph/bin/activate
+   venv-clm-dehyph/bin/python3 -m pip install --upgrade pip
    pip install -r requirements.txt
-   ```
-
-2. preparation
-   ```bash
    make prepare
    ```
    `7z` is needed for this step.
 
-3. evaluation
+2. evaluation
    ```bash
    make eval-small
    ```
